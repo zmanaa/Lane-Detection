@@ -18,3 +18,8 @@ comb_image  = cv2.addWeighted(lane_image, 0.7, line_image, 1, 1)
 # Showing the image
 cv2.imshow("Result", comb_image)
 cv2.waitKey(0)
+
+
+# Saving
+filename = 'Output/savedImage.jpg'
+cv2.imwrite(filename, comb_image)

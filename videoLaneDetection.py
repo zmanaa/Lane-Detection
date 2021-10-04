@@ -5,6 +5,13 @@ import cv2
 
 
 vid = cv2.VideoCapture("Assets/testVideo.mp4")
+width = int(vid.get(cv2.CAP_PROP_FRAME_WIDTH) + 0.5)
+height = int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT) + 0.5)
+size = (width, height)
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('Output1.avi', fourcc, 20.0, size)
+
+
 while(vid.isOpened()):
     _, frame = vid.read()
     canny_image = Utils.usedFunctions.canny(frame)
@@ -20,8 +27,13 @@ while(vid.isOpened()):
     comb_image  = cv2.addWeighted(frame, 0.7, line_image, 1, 1)
     # Showing the ane_imageimage
     cv2.imshow("Result", comb_image)
+
+
+    out.write(comb_image)
+
     if cv2.waitKey(1) == ord('q'):
         break
 
-cap.release()
+vid.release()
+out.release()
 cv2.destroyWindow()
