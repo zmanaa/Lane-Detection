@@ -5,3 +5,7 @@ recorded using camera mounted on a moving car
 ## Results
 ### Static Image
 ![alt text](Output/savedImage.jpg "The output for the static image.")
+### Video output
+![Alt Text](https://github.com/zmanaa/Lane-Detection/blob/main/Output/outputVid.gif)
+
+
