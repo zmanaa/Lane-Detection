@@ -4,7 +4,7 @@ recorded using camera mounted on a moving car
 
 ## Results
 ### Static Image
-![](Output/savedImage.jpg | width=100)
+<img src="https://github.com/zmanaa/Lane-Detection/blob/main/Output/savedImage.jpg" width="400">
 ### Video output
 ![](https://github.com/zmanaa/Lane-Detection/blob/main/Output/outputVid.gif)
 
