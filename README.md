@@ -14,12 +14,14 @@ git clone https://github.com/zmanaa/Lane-Detection.git
 ```
 Once you have a copy of the source, you can use it as follows:
 ### Static Image Module
+Run this command in order to get the static image lane detection results
 ```bash
 python3 staticImageLaneDetection.py
 ```
 you can find the result [here](#static-image)
 
 ### Video Module
+Run this command in order to get the video lane detection results
 ```bash
 python3 videoLaneDetection.py
 ```
