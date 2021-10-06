@@ -3,12 +3,27 @@ This is a lane detection algorithm written with python programming language with
 
 # The User Guide
 ## Prerequistes
+1. install python on your machine.
+2. install each of numpy and openCV library.
+3. make sure you have the projects assets.
 
 ## Get the Source Code
 You can clone the public repository:
 ```bash
 git clone https://github.com/zmanaa/Lane-Detection.git
 ```
+Once you have a copy of the source, you can use it as follows:
+### Static Image Module
+```bash
+python3 staticImageLaneDetection.py
+```
+you can find the result [here](#static-image)
+
+### Video Module
+```bash
+python3 videoLaneDetection.py
+```
+you can find the result [here](#video-output)
 
 # Results
 ## Static Image
